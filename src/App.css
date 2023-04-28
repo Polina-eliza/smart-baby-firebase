@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;900&display=swap');
 
 
 :root {
   --card-bg-01: #fdefe6;
   --card-bg-02: #d6e5fb;
-  --card-bg-03: #ceebe9;
-  --card-bg-04: #f2f1b2;
-  --primary-color: #e468de;
-  --hero-bg: #f2e756;
+  --card-bg-03: #f2e0f5;
+  --card-bg-04: #dedc66;
+  --primary-color: #e686d6;
+  --color-accent: #b264ef;
   --heading-fontSize: 2rem;
   --small-text-color: #999;
   --heading-text-color: #e468de;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 h1,
@@ -47,9 +47,24 @@ h2 {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
   text-decoration: none;
   color: unset;
+  
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+.section__title {
+  color: var(--primary-color);
+  font-weight: 600;
 }

@@ -3,7 +3,7 @@ import productImg02 from "../images/animal-tower.webp";
 import productImg03 from "../images/bear-wound.webp";
 
 import productImg04 from "../images/birds-logic.webp";
-import productImg05 from "../images/candles.webp";
+// import productImg05 from "../images/candles.webp";
 import productImg06 from "../images/colors.webp";
 
 import productImg07 from "../images/healthy-habbits.webp";
@@ -27,7 +27,7 @@ const products = [
     id: "01",
     productName: "Animal World",
     imgUrl: productImg01,
-    category: "fiveYears",
+    category: "5 Years",
     price: 15.99,
     shortDesc:
       "Developmental kit set on spirals Animal World of 6 points of the world.",
@@ -39,7 +39,7 @@ const products = [
     id: "02",
     productName: "Animal Tower Building Set",
     imgUrl: productImg02,
-    category: "fiveYears",
+    category: "5 Years",
     price: 12.99,
     shortDesc:
       "Developmental tool Animal Tower Building Set",
@@ -51,7 +51,7 @@ const products = [
     id: "03",
     productName: "Heal the Bear's Wound",
     imgUrl: productImg03,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit Heal the Bear's Wound!",
@@ -63,7 +63,7 @@ const products = [
     id: "04",
     productName: "Birds on the Fance",
     imgUrl: productImg04,
-    category: "fiveYears",
+    category: "3 Years",
     price: 12.99,
     shortDesc:
       "Developmental kit Birds on the Fance",
@@ -71,17 +71,17 @@ const products = [
       "The game Birds on the Fence is perfect for children who are already familiar with colors and are beginning to learn left and right. With the help of this game, the child learns to work with schemes, consolidates color names, learns the concepts of right/left, and also trains memory."
   },
 
-  {
-    id: "05",
-    productName: "How Many Candles on the Cake?",
-    imgUrl: productImg05,
-    category: "threeYears",
-    price: 10.99,
-    shortDesc:
-      "Developmental kit How Many Candles on the Cake?",
-    description:
-      "The clip cards game How Many Candles on the Cake? is perfect for children who are just starting to learn to count from 1 to 5. Ask your child to count how many candles are on the cake, and then ask them to clip the peg onto the corresponding number. With the help of this game, the child learns to count, develops visual perception, and also trains fine motor skills."
-  },
+  // {
+  //   id: "05",
+  //   productName: "How Many Candles on the Cake?",
+  //   imgUrl: productImg05,
+  //   category: "threeYears",
+  //   price: 10.99,
+  //   shortDesc:
+  //     "Developmental kit How Many Candles on the Cake?",
+  //   description:
+  //     "The clip cards game How Many Candles on the Cake? is perfect for children who are just starting to learn to count from 1 to 5. Ask your child to count how many candles are on the cake, and then ask them to clip the peg onto the corresponding number. With the help of this game, the child learns to count, develops visual perception, and also trains fine motor skills."
+  // },
 
   {
     id: "06",
@@ -99,7 +99,7 @@ const products = [
     id: "07",
     productName: "Healthy Habits",
     imgUrl: productImg07,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit Healthy Habits",
@@ -109,9 +109,9 @@ const products = [
 
   {
     id: "08",
-    productName: "What Juice is in the Glass?",
+    productName: "What kind of Juice?",
     imgUrl: productImg08,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit What Juice is in the Glass?",
@@ -121,9 +121,9 @@ const products = [
 
   {
     id: "09",
-    productName: "Collect Mushrooms in the Basket",
+    productName: "Mushroom collection ",
     imgUrl: productImg09,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit Collect Mushrooms in the Basket",
@@ -135,7 +135,7 @@ const products = [
     id: "10",
     productName: "Making Words",
     imgUrl: productImg10,
-    category: "fiveYears",
+    category: "5 Years",
     price: 10.99,
     shortDesc:
       "Developmental kits Making Words",
@@ -147,7 +147,7 @@ const products = [
     id: "11",
     productName: "Shadow Lotto: Kitchen",
     imgUrl: productImg11,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit Shadow Lotto: Kitchen",
@@ -159,7 +159,7 @@ const products = [
     id: "12",
     productName: "Shape Sorter",
     imgUrl: productImg12,
-    category: "fiveYears",
+    category: "5 Years",
     price: 10.99,
     shortDesc:
       "Developmental kit Shape Sorter",
@@ -170,7 +170,7 @@ const products = [
     id: "13",
     productName: "Help the Snail Find its Home",
     imgUrl: productImg13,
-    category: "oneYear",
+    category: "2 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit Help the Snail Find its Home",
@@ -182,7 +182,7 @@ const products = [
     id: "14",
     productName: "What Matches the Transport?",
     imgUrl: productImg14,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit What Matches the Transport? ",
@@ -194,7 +194,7 @@ const products = [
     id: "15",
     productName: "Making words",
     imgUrl: productImg15,
-    category: "fiveYears",
+    category: "5 Years",
     price: 10.99,
     shortDesc:
       "Developmental kit Making Words",
@@ -206,7 +206,7 @@ const products = [
     id: "16",
     productName: "What is the sum?",
     imgUrl: productImg16,
-    category: "fiveYears",
+    category: "5 Years",
     price: 10.99,
     shortDesc:
       "The developmental kit What is the sum?",
@@ -218,7 +218,7 @@ const products = [
     id: "17",
     productName: "Sorting the waste",
     imgUrl: productImg17,
-    category: "fiveYears",
+    category: "5 Years",
     price: 12.99,
     shortDesc:
       "Developmental kit Sorting the waste",
@@ -228,9 +228,9 @@ const products = [
 
   {
     id: "18",
-    productName: "How many chocolates are in the cupcake?",
+    productName: "How many chocolates?",
     imgUrl: productImg18,
-    category: "threeYears",
+    category: "3 Years",
     price: 8.99,
     shortDesc:
       "Developmental kit How many chocolates are in the cupcake?",

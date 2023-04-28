@@ -1,0 +1,71 @@
+
+.hero__content {
+    padding: 45px; 
+    width: 500px; 
+    margin: 0 auto; 
+}
+
+.hero__section {
+    margin-top: 70px;
+    background: var(--primary-color);
+    text-align: center;
+
+    
+}
+.hero__content h2 {
+   color: #fff;
+   font-weight: 700;
+   margin: 20px 0;
+}
+
+.hero__img img {
+    height: 400px;
+    width: 400px;
+}
+
+.hero__subtitle {
+    color: #fff;
+}
+
+.hero__text {
+    color: #fff;
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.buy__btn {
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 40px;
+    color: var(--primary-color);
+    font-weight: 500;
+
+}
+
+.buy__btn a:hover {
+    color: #111;
+}
+
+.timer__count {
+    background: var(--color-accent);
+    height: 350px;
+}
+
+.brain__img {
+    width: 70% !important;
+    height: 70% !important;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.clock__top-content {
+    margin-bottom: 25px;
+}
+
+
+

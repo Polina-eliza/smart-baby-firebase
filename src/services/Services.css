@@ -1,0 +1,22 @@
+ .service__item {
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    gap: 10px;
+    cursor: pointer;   
+    max-width:330px;
+ }
+
+ .service__item svg {
+    color: var(--primary-color);
+ }
+
+ .service__item p {
+    color: var(--small-text-color);
+ }
+
+ .service__item h5 {
+    color: #ffffff;
+ }
+

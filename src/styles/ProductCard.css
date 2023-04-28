@@ -1,0 +1,28 @@
+
+.product__info h3 a {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-top: 30px;
+}
+
+.product__info a:hover {
+    color: inherit;
+}
+
+.product__item {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.age__group {
+    color: var(--small-text-color);
+}
+
+.product__card-bottom svg {
+    color: var(--primary-color);
+}
+
+.product__card-bottom .price {
+    font-weight: 500;
+}
+

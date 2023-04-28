@@ -1,0 +1,47 @@
+.footer {
+    margin-top: 150px;
+    color: var(--primary-color);
+}
+
+.footer__logo {
+    width: 90px;
+}
+
+.footer svg {
+   color: var(--primary-color);
+}
+
+.footer__text {
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.footer__text span {
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+
+
+.footer__quick-links a:hover {
+    color: var(--primary-color);
+
+}
+
+.logo__text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.quick__links-title {
+    margin-bottom: 30px;
+}
+
+.footer__links {
+    color: var(--small-text-color);
+}
+
+.footer__copyright {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
