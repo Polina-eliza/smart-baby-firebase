@@ -10,7 +10,7 @@ const Footer = () => {
    <footer className="footer">
     <Container>
       <Row>
-        <Col lg='4'>
+        <Col lg='4' className='mb-4'>
         <div className="logo__text">
               SMARTBABY
             </div>
@@ -18,7 +18,7 @@ const Footer = () => {
 This is a new breakthrough, a small revolution in educational games for children.</p>
         </Col>
 
-        <Col lg='3'>
+        <Col lg='3' md='3' className='mb-4'>
           <div className="footer__quick-links">
             <h4 className='quick__links-title'>Top Categories</h4>
             <ListGroup className="mb-3">
@@ -35,9 +35,9 @@ This is a new breakthrough, a small revolution in educational games for children
               </ListGroupItem>
             </ListGroup>
           </div>
-
         </Col>  
-        <Col lg='2'>
+
+        <Col lg='2' md='3' className='mb-4' md='6'>
         <div className="footer__quick-links">
             <h4 className='quick__links-title'>Useful Links</h4>
             <ListGroup className="mb-3">
@@ -56,7 +56,7 @@ This is a new breakthrough, a small revolution in educational games for children
           </div>
         </Col> 
 
-        <Col lg='3'>
+        <Col lg='3' md='4' className='mb-4'>
         <div className="footer__quick-links">
             <h4 className='quick__links-title'>Contact</h4>
             <ListGroup className="footer__contact">

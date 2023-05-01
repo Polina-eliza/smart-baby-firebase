@@ -7,19 +7,19 @@ const serviceData = [
     {
       icon: <MdOutlineDeliveryDining size={40} />,
       title: "Free Shipping",
-      subtitle: "On purchases over $30.",
+      subtitle: "Worldwide",
       bg: "#f2f1b2",
     },
     {
       icon: <CgInfinity size={40} />,
       title: "Easy Returns",
-      subtitle: "If the item is unused.",
+      subtitle: "If is unused.",
       bg: "#f2e0f5",
     },
     {
       icon: <AiOutlineSecurityScan size={40} />,
       title: "Save Payment",
-      subtitle: "No hidden payments.",
+      subtitle: "No hidden fees.",
       bg: "#fdefe6",
     },
     {
