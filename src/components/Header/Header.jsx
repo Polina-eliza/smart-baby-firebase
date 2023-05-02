@@ -6,6 +6,7 @@ import { NavLink } from "react-router-dom";
 import { BsBag, BsHeart } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useSelector } from 'react-redux';
 
 const nav__links = [
   {
@@ -16,7 +17,7 @@ const nav__links = [
     path: "shop",
     display: "Shop",
   },
-  {
+  { 
     path: "cart",
     display: "Cart",
   },
@@ -25,6 +26,7 @@ const nav__links = [
 const Header = () => {
 
   const headerRef = useRef(null);
+  const totalQuantity = useSelector(state=> state.cart.totalQuantity);
 
   const menuRef = useRef(null);
 
@@ -81,7 +83,7 @@ const Header = () => {
               </div>
               <div className="cart__icon">
                 <BsBag size={22} />
-                <span className="badge">1</span>
+                <span className="badge">{totalQuantity}</span>
               </div>
               <FaUserAlt className="user__icon" size={22} />
               <div className="mobile__menu">
