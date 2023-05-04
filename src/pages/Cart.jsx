@@ -3,15 +3,16 @@ import "../styles/Cart.css";
 import CommonSection from "../components/UI/CommonSection";
 import { Container, Row, Col} from "reactstrap";
 import { AiFillDelete } from "react-icons/ai";
-import Animal from "../assets/images/animal-tower.webp";
 import { motion } from 'framer-motion';
-import { cartActions } from '../redux/slices/cartSlice';
+import { cartAction } from '../redux/slices/cartSlice.js';
 import { useSelector, useDispatch } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const Cart = () => {
 
   const cartItems = useSelector(state => state.cart.cartItems);
+  const totalAmount = useSelector(state=> state.cart.totalAmount);
 
   return (
     <>
@@ -34,19 +35,28 @@ const Cart = () => {
                   <th>Delete</th>
                 </tr>
               </thead>
+
               <tbody>
-                <tr>
-                  <td><img src={Animal} alt="" /></td>
-                  <td>Animal Tower Building Set</td>
-                  <td>$8.99</td>
-                  <td>2px</td>
-                  <td><span><AiFillDelete /></span></td>
-                </tr>
+                {
+                  cartItems.map((item, index) => (
+                <Tr item={item} key={index}/>
+                  ))
+                }
               </tbody>
             </table>
               )}  
           </Col>
           <Col lg='3'>
+            <div>
+              <h6 className='d-flex align-items-center justify-content-between'>Subtotal
+              <span className='fs-4 fw-bold'>${totalAmount}</span>
+              </h6>
+              
+              <div>
+                <button className="buy__btn cart__btn w-100"><Link to='/checkout'>Checkout</Link></button>
+                <button className="buy__btn cart__btn w-100 mt-3"><Link to='/shop'>Continue Shopping</Link></button>
+              </div>
+            </div>
             
           </Col>
         </Row>
@@ -54,8 +64,24 @@ const Cart = () => {
       
     </section>
     </>
-    
   )
-}
+};
+
+const Tr = ({item})=> {
+  const dispatch = useDispatch();
+
+  const deleteProduct = ()=> {
+    dispatch(cartAction.deleteItem(item.id))
+  }
+  return (
+  <tr>
+  <td><img src={item.imgUrl} alt="" /></td>
+  <td>{item.productName}</td>
+  <td>${item.price}</td>
+  <td>{item.quantity}px</td>
+  <td><span><AiFillDelete onClick={deleteProduct}/></span></td>
+</tr>
+  );
+};
 
 export default Cart

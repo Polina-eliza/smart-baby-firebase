@@ -1,0 +1,37 @@
+.auth__form {
+    background: var(--primary-color);
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.form__group input {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    padding: 15px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.login__btn {
+    background: #fff !important;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.login__text {
+    color: #616161;
+    margin-top: 25px;
+    font-size: 1rem;
+}
+
+.login__text span {
+    font-weight: 500;
+    color: #fff;
+}
+
+.login__text span:focus {
+    outline: none;
+}

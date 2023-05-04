@@ -2,11 +2,13 @@ import React, {useRef, useEffect } from 'react';
 import "./Header.css";
 import { Container, Row } from "reactstrap";
 import logo from "../../assets/images/smart-logo.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { BsBag, BsHeart } from "react-icons/bs";
 import { FaUserAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector } from 'react-redux';
+import useAuth from '../../costom-hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 const nav__links = [
   {
@@ -29,6 +31,9 @@ const Header = () => {
   const totalQuantity = useSelector(state=> state.cart.totalQuantity);
 
   const menuRef = useRef(null);
+  const navigate = useNavigate();
+  const {currentUser} = useAuth();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +53,10 @@ const Header = () => {
   }, []);
 
   const menuToggle = () => menuRef.current.classList.toggle('active__menu');
+
+  const navigateToCart = () => {
+    navigate("/cart");
+  }
 
 
   return (
@@ -81,11 +90,23 @@ const Header = () => {
                 <BsHeart size={22} />
                 <span className="badge">1</span>
               </div>
-              <div className="cart__icon">
+              <div className="cart__icon" onClick={navigateToCart}>
                 <BsBag size={22} />
                 <span className="badge">{totalQuantity}</span>
               </div>
+              <div className='profile'>
               <FaUserAlt className="user__icon" size={22} />
+              </div>
+
+              <div className='profile__actions'>
+                {
+                  currentUser ? <span>Logout</span> : <div>
+                    <Link to='/signup'>Signup</Link>
+                    <Link to='/login'>Login</Link>
+                  </div>
+                }
+              </div>
+             
               <div className="mobile__menu">
                 <span onClick={menuToggle}>
                 <GiHamburgerMenu size={22} />
