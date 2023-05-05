@@ -59,9 +59,27 @@
     z-index: 10;
 }
 
-.nav__icons .profile .profile__actions {
-    position: absolute;
-    top: 100%;
+ .profile__actions {
+    /* position: absolute;
+    top: 110px;
+    right: 0;
+    width: 100px;
+    z-index: 10;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column; */
+    background: var(--card-bg-01);
+    line-height: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.show__profileActions {
+    display: block;
 }
 
 
@@ -86,6 +104,8 @@
     box-shadow: 3px 3px 8px -3px #ddd;
     background: #fff;
 }
+
+
 
 @media screen and (max-width: 768px) {
     .navigation {
