@@ -37,7 +37,7 @@ This is a new breakthrough, a small revolution in educational games for children
           </div>
         </Col>  
 
-        <Col lg='2' md='3' className='mb-4' md='6'>
+        <Col lg='2' md='3' className='mb-4'>
         <div className="footer__quick-links">
             <h4 className='quick__links-title'>Useful Links</h4>
             <ListGroup className="mb-3">

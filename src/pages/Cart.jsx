@@ -3,7 +3,6 @@ import "../styles/Cart.css";
 import CommonSection from "../components/UI/CommonSection";
 import { Container, Row, Col} from "reactstrap";
 import { AiFillDelete } from "react-icons/ai";
-import { motion } from 'framer-motion';
 import { cartAction } from '../redux/slices/cartSlice.js';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';

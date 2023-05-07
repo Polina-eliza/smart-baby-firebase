@@ -107,7 +107,7 @@ const Header = () => {
             <div className="nav__icons">
               <div className="fav__icon">
                 <BsHeart size={22} />
-                <span className="badge">1</span>
+                <span className="badge">0</span>
               </div>
               <div className="cart__icon" onClick={navigateToCart}>
                 <BsBag size={22} />
