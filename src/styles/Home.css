@@ -122,6 +122,12 @@
         font-size: 1.4rem;
     }
 
+    .hero__content {
+        padding: 25px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
 
 }
 
