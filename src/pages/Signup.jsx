@@ -6,10 +6,8 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase.config.js";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { setDoc, doc } from 'firebase/firestore';
-import { db } from '../firebase.config';
-
-
+import { setDoc, doc } from "firebase/firestore";
+import { db } from "../firebase.config";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -41,7 +39,6 @@ const Signup = () => {
       toast.error(`Failed to create account: ${error.message}`);
     }
   };
-
 
   return (
     <section>

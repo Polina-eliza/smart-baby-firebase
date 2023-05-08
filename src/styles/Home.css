@@ -1,134 +1,123 @@
-
 .hero__content {
-    padding: 45px; 
-    width: 500px; 
-    margin: 0 auto; 
+  padding: 45px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .hero__section {
-    margin-top: 70px;
-    background: var(--primary-color);
-    text-align: center;
-
-    
+  margin-top: 70px;
+  background: var(--primary-color);
+  text-align: center;
 }
 .hero__content h2 {
-   color: #fff;
-   font-weight: 700;
-   margin: 20px 0;
+  color: #fff;
+  font-weight: 700;
+  margin: 20px 0;
 }
 
 .hero__img img {
-    height: 400px;
-    width: 400px;
+  height: 400px;
+  width: 400px;
 }
 
 .hero__subtitle {
-    color: #fff;
+  color: #fff;
 }
 
 .hero__text {
-    color: #fff;
-    line-height: 28px;
-    font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+  font-size: 20px;
 }
 
 .buy__btn {
-    border: none;
-    outline: none;
-    padding: 12px 25px;
-    border-radius: 50px;
-    background: #fff;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-top: 40px;
-    color: var(--primary-color);
-    font-weight: 500;
-
+  border: none;
+  outline: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 40px;
+  color: var(--primary-color);
+  font-weight: 500;
 }
 
 .buy__btn a:hover {
-    color: #111;
+  color: #111;
 }
 
 .timer__count {
-    background: var(--color-accent);
-    height: 350px;
+  background: var(--color-accent);
+  height: 350px;
 }
 
 .brain__img {
-    width: 70% !important;
-    height: 70% !important;
-    object-fit: contain;
-    margin-top: 20px;
+  width: 70% !important;
+  height: 70% !important;
+  object-fit: contain;
+  margin-top: 20px;
 }
 
 .clock__top-content {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 992px) {    
-    .hero__content h2 {
-        font-size: 2rem;
-    }
+@media only screen and (max-width: 992px) {
+  .hero__content h2 {
+    font-size: 2rem;
+  }
 
-    .section__title {
-        font-size: 1.7rem;
-    }
+  .section__title {
+    font-size: 1.7rem;
+  }
 
-    .counter__img {
-        display: none;
-    }
+  .counter__img {
+    display: none;
+  }
 
-    .clock__top-content {
-        text-align: center;
-    }
+  .clock__top-content {
+    text-align: center;
+  }
 
-    .clock__top-content h4 {
-        font-size: 0.9rem !important;;
-    }
+  .clock__top-content h4 {
+    font-size: 0.9rem !important;
+  }
 
-    .clock__top-content h3 {
-        font-size: 1rem !important;
-    }
+  .clock__top-content h3 {
+    font-size: 1rem !important;
+  }
 
-    .count__down-col{
-        text-align: center;
-        display: inline-block;
-    }
-
-
+  .count__down-col {
+    text-align: center;
+    display: inline-block;
+  }
 }
 
+@media only screen and (max-width: 768px) {
+  .hero__content h2 {
+    font-size: 1.6rem;
+  }
 
-@media only screen and (max-width: 768px) {    
-    .hero__content h2 {
-        font-size: 1.6rem;
-    }
+  .hero__text {
+    font-size: 1rem;
+  }
 
-    .hero__text {
-        font-size: 1.0rem;
-    }
+  .buy__btn {
+    font-size: 0.9rem;
+  }
 
-    .buy__btn {
-        font-size: 0.9rem;
-    }
- 
-    .section__title {
-        font-size: 1.4rem;
-    }
+  .section__title {
+    font-size: 1.4rem;
+  }
 
-    .section__title {
-        font-size: 1.4rem;
-    }
+  .section__title {
+    font-size: 1.4rem;
+  }
 
-    .hero__content {
-        padding: 25px;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-
+  .hero__content {
+    padding: 25px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
-
-

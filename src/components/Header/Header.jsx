@@ -9,8 +9,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useSelector } from "react-redux";
 import useAuth from "../../costom-hooks/useAuth";
 import { Link } from "react-router-dom";
-import { signOut } from 'firebase/auth';
-import { auth } from '../../firebase.config';
+import { signOut } from "firebase/auth";
+import { auth } from "../../firebase.config";
 import { toast } from "react-toastify";
 
 const nav__links = [
@@ -37,9 +37,8 @@ const Header = () => {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
 
-  
   const stickyHeaderFunc = () => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
@@ -49,23 +48,24 @@ const Header = () => {
         headerRef.current.classList.remove("sticky__header");
       }
     });
-    };
+  };
 
-    const logout = () => {
-      signOut(auth).then(()=> {
-        toast.success('Logged out');
-        navigate('/home');
-      }).catch(err=>{
+  const logout = () => {
+    signOut(auth)
+      .then(() => {
+        toast.success("Logged out");
+        navigate("/home");
+      })
+      .catch((err) => {
         toast.error(err.message);
-      });    
-    };
-  
-  
-    useEffect(() => {
-      stickyHeaderFunc();
+      });
+  };
 
-      return () => window.removeEventListener('scroll', stickyHeaderFunc);
-    });
+  useEffect(() => {
+    stickyHeaderFunc();
+
+    return () => window.removeEventListener("scroll", stickyHeaderFunc);
+  });
 
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
 
@@ -113,7 +113,7 @@ const Header = () => {
                 <BsBag size={22} />
                 <span className="badge">{totalQuantity}</span>
               </div>
-              <div className="profile" onClick={toggleProfileActions} >
+              <div className="profile" onClick={toggleProfileActions}>
                 <FaUserAlt className="user__icon" size={22} />
               </div>
 
@@ -123,7 +123,7 @@ const Header = () => {
                 onClick={toggleProfileActions}
               >
                 {currentUser ? (
-                  <span onClick={logout} >Logout</span>
+                  <span onClick={logout}>Logout</span>
                 ) : (
                   <div className=" d-flex align-items-center justify-content-center flex-column">
                     <Link to="/signup">Signup</Link>

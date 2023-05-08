@@ -4,12 +4,12 @@ import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDMK3uQlo5zQH3ZKs96PFYteEQKdG1bUaI",
-  authDomain: "smart-baby-c0f86.firebaseapp.com",
-  projectId: "smart-baby-c0f86",
-  storageBucket: "smart-baby-c0f86.appspot.com",
-  messagingSenderId: "484638892545",
-  appId: "1:484638892545:web:a0b5359bcc6fa8f9dd1600"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 
@@ -18,3 +18,4 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 export default app;
+
