@@ -6,5 +6,4 @@ SmartBaby is an e-commerce web application that specializes in selling products 
 Build with:
 * HTML, CSS
 * React JS
-* API
 * Redux
