@@ -7,3 +7,4 @@ Build with:
 * HTML, CSS
 * React JS
 * API
+* Redux
