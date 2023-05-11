@@ -40,7 +40,7 @@ const Home = () => {
               speech, logical thinking, creative imagination and much more ⭐
             </p>
             <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
-              <Link to="shop">SHOP NOW</Link>
+              <Link to="/shop">SHOP NOW</Link>
             </motion.button>
           </div>
         </Container>
